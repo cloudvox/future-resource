@@ -1,9 +1,12 @@
 language: ruby
 rvm:
-  - 1.9.2
   - 1.9.3
-  - rbx-19mode
+  - 2.1.0
+  - rbx-4
   - jruby-19mode
   - ruby-head
+matrix:
+  allow_failures:
+    - rvm: rbx-4
 notifications:
   irc: "irc.freenode.org#adhearsion"
